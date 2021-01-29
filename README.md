@@ -15,3 +15,5 @@
 * 관련 도구
   - 사용 언어: HTML, CSS, Jquery
   - 사용 개발 플랫폼: Visual Studio Code
+
+[프로젝트 관련 상세 설명과 공부했던 내용](https://drive.google.com/file/d/1IusCWtJFmkuF8Cj-MUaEzaip66DVNCwB/view?usp=sharing)
