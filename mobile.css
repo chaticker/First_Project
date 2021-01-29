@@ -1,0 +1,172 @@
+/*mobile size*/
+@media(max-width: 480px){
+    body{
+        clear: both;
+        float: left;
+    }
+    .container{
+        font-size: 0.9rem;
+    }
+    /*hide navbar menu*/
+    .navbar-nav{
+        position: absolute;
+        margin-top: 70px;
+        background-color: #212529;
+    }
+    .navbar-brand{
+        padding: 10px;
+    }
+    .nav-link{
+        font-size: 0.5rem !important;
+    }
+    .collapse{
+        float: right;
+        display: inline-block;
+        padding-right: 20px;
+    }
+
+    /*menu icon*/
+    .xi-bars{
+        display: block !important;
+        padding: 15px;
+    }
+    
+    .service-row{
+        display: inline;
+        width: 100%;
+        height: auto;
+    }
+
+    /*header img & letter*/
+    .header-content{
+        position: relative;
+        text-align: center;
+        width: 100%;
+}
+    .header-img{
+        position: absolute;
+        display: block;
+        right: 10%;
+        top: 18%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .header-letter{
+        display: block;
+        font-size: 2.0rem;
+        bottom: 30%;
+        width: 100%;
+    }
+    
+
+    /*slide button down size*/
+    .visual{
+        width: 100%;
+        height: 100%;
+    }
+    .visual button{
+        width: 40px;
+        height: 40px;
+    }
+    .visual button:before{
+        font-size: 20px;
+    }
+
+    /*font resize*/
+    .col-md-4{
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    /*more button resize*/
+    .btn{
+        width: 80%;
+    }
+    .btn h3{
+        font-size: 0.8rem;
+        font-weight: 900;
+    }
+
+    /*service item resize*/
+    .section-heading{
+        padding-top: 50px;
+        font-size: 1.8rem;
+    }
+    .section-subheading{
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 1.0rem;
+    }
+    .text-muted{
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 0.8rem;
+    }
+    .sdn-section{
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 4rem;
+    }
+    .infra-section{
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 4rem;
+    }
+    .sqa-section{
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 4rem;
+    }
+    .sdn-section .row{
+        display: inline;
+    }
+    .infra-section .row{
+        display: inline;
+    }
+    .sqa-section .row{
+        display: inline;
+    }
+    .service-item{
+        position: relative;
+        display: block;
+    }
+ 
+    /*modal content img resize*/
+    .modal{
+        padding-top: 30%;
+    }
+    .modal-content img{
+        width: 100%;
+    }
+    .more{
+        padding-top: 3.5rem;
+        font-size: 3.5rem;
+        font-weight: 900;
+    }
+
+    /*footer resize*/
+    .footer-contact{
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+    .employment{
+        position: absolute;
+    }
+    .employment img{
+        width: 80%;
+        display: inline;
+        float: left;
+    }
+    .info td{
+        font-size: 5px;
+        float: left;
+        margin-left: 8px;
+    }
+    #contact h3{
+        color: #fff;
+        padding-top: 100px;
+    }
+
+}

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="web.css" rel="stylesheet" />
+    <link href="tablet.css" rel="stylesheet" />
+    <link href="mobile.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!--xeicon 사용-->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body id="page-top">
+    <!-- 내비게이션 구현(완료) -->
+        <nav class="navbar fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="https://www.yescnc.co.kr/img/logo_yescnc_01.png" alt=""></a>
+                <div id="menu-toggle">
+                    <i class="xi-bars xi-2x pull-right"></i>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#service">Our Service</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sdn">SDN</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#infra">IT INFRA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sqa">SQA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Platform</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Intranet</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <!--슬라이더 구현(완료)-->
+    <header class="masthead">
+        <div class="container">
+            <section class="visual">
+                <div class="header-content text-center">
+                    <img class="header-img" src="https://www.yescnc.co.kr/img/index/img_index_02.png" alt="">
+                    <h1 class="header-letter">Software Defined Network</h1>
+                    <img class="slider" src="img/adrian-infernus-GLf7bAwCdYg-unsplash.jpg" alt="">
+                </div>
+                <div class="header-content text-center">
+                    <img class="header-img" src="https://www.yescnc.co.kr/img/index/img_index_03.png" alt="">
+                    <h1 class="header-letter">IT Infra structure Service</h1>
+                    <img class="slider" src="img/cesar-couto-tnLXeAkrxDE-unsplash.jpg" alt="">
+                </div>
+                <div class="header-content ">
+                    <img class="header-img" src="https://www.yescnc.co.kr/img/index/img_index_01.png" alt="">
+                    <h1 class="header-letter">Software Quality Assurance</h1>
+                    <img class="slider" src="img/luke-chesser-pJadQetzTkI-unsplash.jpg" alt="">
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <!--대표 서비스(완료)-->
+    <div class="buttons">
+        <button type="button" class="button1" onclick="location.href='#service'">OUR SERVICE</button>
+    </div>
+    <section class="service-section text-center" id="service">
+        <h2 class="section-heading">Our Service</h2><br>
+
+        <div class="container">
+            <div class="service-row text-center">
+                <div class="col-md-4">
+                    <img src="img/business.png" alt="">
+                    <a href="#sdn">
+                        <h2 class="my-3">SDN <h4>Software Defined Network</h4> </h2>
+                    </a>
+                    <br>
+                    <a class="btn" href="#sdn"><h3>More</h3></a>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/analysis.png" alt="">
+                    <a href="#infra">
+                        <h2 class="my-3">IT Infra <h4>IT Infra structure</h4> </h2>
+                    </a>
+                    <br>
+                    <a class="btn" href="#infra"><h3>More</h3></a>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/analytics.png" alt="">
+                    <a href="#sqa">
+                        <h2 class="my-3">SQA <h4>Software Quality Assurance</h4> </h2>
+                    </a>
+                    <br>
+                    <a class="btn" href="#sqa"><h3>More</h3></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SDN 제품 소개-->
+    <section class="sdn-section" id="sdn">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading">SDN</h2><br>
+                <h4 class="section-subheading">소프트웨어 프로그램을 통해 네트워크 경로설정, 제어 및 복잡한 운용관리를 편리하게 처리 가능한 차세대 네트워크 기술</h4>
+                <p class="text-muted">네트워크 구성에 필요한 서버 및 스위치 장비들에 대한 신속한 지원 및 제공 가능</p>
+            </div>
+            <!--모달 창 구현(완료)-->
+            <div class="row">
+                    <div id="item1">
+                        <div class="service-item">
+                            <div class="more">+</div>
+                            <img class="img-cover" src="https://www.yescnc.co.kr/img/sdn/sdn_switch/AS7512-32X.png" alt="">
+                            <img class="img-fluid" src="img/adrian-infernus-GLf7bAwCdYg-unsplash.jpg" alt="" />
+                            <div class="service-caption">
+                                <div class="service-caption-heading">SDN Switch</div>
+                                    <!--모달-->
+                                    <div id="myModal1" class="modal">
+                                    <!--모달 내용-->
+                                        <div id="modal-content" class="modal-content">
+                                            <h2>Open Networking Solution</h2>
+                                            <img src="https://www.yescnc.co.kr/img/sdn/sdn_switch/AS7512-32X.png" alt="">
+                                            <h3>Edge-Core Network</h3>
+                                            <br>
+                                            <p>NOS, SDN, 가상화 및 Cloud Orchestration을 위한 개방형 소프트웨어를 이용하여 디자인이 완전히 오픈 소스인 네트워킹 하드웨어를 기반으로 합니다. 네트워크 용량 및 서비스에 대해 자동적이고, 신속한 프로비저닝이 가능합니다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div id="item2">
+                        <div class="service-item">
+                            <div class="more">+</div>
+                            <img class="img-cover" src="https://www.yescnc.co.kr/img/sdn/sdn_whiteBox/server-sau50811.png" alt="">
+                            <img class="img-fluid" src="img/adrian-infernus-GLf7bAwCdYg-unsplash.jpg" alt="" />
+                            <div class="service-caption">
+                                <div class="service-caption-heading">White Box</div>
+                                    <div id="myModal2" class="modal">
+                                        <div id="modal-content" class="modal-content">
+                                            <h2>White Box Server</h2>
+                                            <img src="https://www.yescnc.co.kr/img/sdn/sdn_whiteBox/server-sau50811.png" alt="">
+                                            <h3>Basic computing engine, x86 Server</h3>
+                                            <br>
+                                            <p>서버 제조업체는 섀시 및 마더 보드를 구축하고 CPU, 메모리 및 스토리지를 추가하여 White Box Server를 만들 수 있습니다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div id="item3">
+                        <div class="service-item">
+                            <div class="more">+</div>
+                            <img class="img-cover" src="https://www.yescnc.co.kr/img/sdn/sdn_wan/edge_2000.png" alt="">
+                            <img class="img-fluid" src="img/adrian-infernus-GLf7bAwCdYg-unsplash.jpg" alt="" />
+                            <div class="service-caption">
+                                <div class="service-caption-heading">SD WAN</div>
+                                    <div id="myModal3" class="modal">
+                                        <div id="modal-content" class="modal-content">
+                                            <h2>Software Defined Wide Area Network</h2>
+                                            <img src="https://www.yescnc.co.kr/img/sdn/sdn_wan/edge_2000.png" alt="">
+                                            <h3>VeloCloud</h3>
+                                            <br>
+                                            <p>SD-WAN은 SDN(Software-Defined Networking)을 기반으로 각 네트워크 구성요소를 추상화하여 WAN을 구성합니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="item4">
+                        <div class="service-item">
+                            <div class="more">+</div>
+                            <img class="img-cover" src="https://www.yescnc.co.kr/img/sdn/orchestrator/img_sdn_nfc_orchestrator.png" alt="">
+                            <img class="img-fluid" src="img/adrian-infernus-GLf7bAwCdYg-unsplash.jpg" alt="" />
+                            <div class="service-caption">
+                                <div class="service-caption-heading">NFV</div>
+                                    <div id="myModal4" class="modal">
+                                        <div id="modal-content" class="modal-content">
+                                            <h2>NFV Orchestrator</h2>
+                                            <img src="https://www.yescnc.co.kr/img/sdn/orchestrator/img_orchestrator_02.jpg" alt="">
+                                            <h3>Network Functions Virtualization</h3>
+                                            <p>NS / VNF의 Lifecycle 관리, Resource 관리, Package On-boarding 등의 역할을 수행합니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <!--IT Infra 제품 소개-->
+    <section class="infra-section" id="infra">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading">IT Infra</h2><br>
+                <h4 class="section-subheading">네트워크, 서버, 데이터베이스, 정보보안, 시스템 소프트웨어 및 기반시설 등 IT서비스의 기반이 되는 시스템 및 구조</h4>
+                <p class="text-muted">통합관제, ITAM/ITSM, NMS, TPMS 서비스를 통해 사용자들에게 수준 높은 서비스 제공 가능</p>
+            </div>
+            <!--모달 창 구현(완료)-->
+            <div class="row">
+                    <div id="item5">
+                        <div class="service-item">
+                            <div class="more">+</div>
+                            <img class="img-cover" src="https://www.yescnc.co.kr/img/itInfra/idc/img_it_infra_itam.png" alt="">
+                            <img class="img-fluid" src="img/adrian-infernus-GLf7bAwCdYg-unsplash.jpg" alt="" />
+                            <div class="service-caption">
+                                <div class="service-caption-heading">ITAM</div>
+                                    <!--모달-->
+                                    <div id="myModal5" class="modal">
+                                    <!--모달 내용-->
+                                        <div id="modal-content" class="modal-content">
+                                            <h2>IT Asset Management</h2>
+                                            <img src="https://www.yescnc.co.kr/img/itInfra/idc/img_it_infra_itam.png" alt="">
+                                            <h3>Data Analysis & Visualization Solution</h3>
+                                            <br>
+                                            <p>IT 자산에 대해 도입부터 폐기까지 체계적으로 Lifecycle을 관리하며, 자산의 재무정보 및 투자 시기를 종합 관리하여 불필요한 비용을 줄이고 장기적인 운영계획을 수립하도록 관리합니다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div id="item6">
+                        <div class="service-item">
+                            <div class="more">+</div>
+                            <img class="img-cover" src="https://www.yescnc.co.kr/img/itInfra/itsm/img_it_infra_itsm.png" alt="">
+                            <img class="img-fluid" src="img/adrian-infernus-GLf7bAwCdYg-unsplash.jpg" alt="" />
+                            <div class="service-caption">
+                                <div class="service-caption-heading">ITSM</div>
+                                    <div id="myModal6" class="modal">
+                                        <div id="modal-content" class="modal-content">
+                                            <h2>IT Asset Management</h2>
+                                            <img src="https://www.yescnc.co.kr/img/itInfra/itsm/img_it_infra_itsm.png" alt="">
+                                            <h3>Data Analysis & Visualization Solution</h3>
+                                            <br>
+                                            <p>IT 자산에 대해 도입부터 폐기까지 체계적으로 Lifecycle을 관리하며, 자산의 재무정보 및 투자 시기를 종합 관리하여 불필요한 비용을 줄이고 장기적인 운영계획을 수립하도록 관리합니다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div id="item7">
+                        <div class="service-item">
+                            <div class="more">+</div>
+                            <img class="img-cover" src="https://www.yescnc.co.kr/img/solution/davis_tpms/img_it_infra_tpms.png" alt="">
+                            <img class="img-fluid" src="img/adrian-infernus-GLf7bAwCdYg-unsplash.jpg" alt="" />
+                            <div class="service-caption">
+                                <div class="service-caption-heading">TPMS</div>
+                                    <div id="myModal7" class="modal">
+                                        <div id="modal-content" class="modal-content">
+                                            <h2>Test Procedure Management System</h2>
+                                            <img src="https://www.yescnc.co.kr/img/solution/davis_tpms/img_it_infra_tpms.png" alt="">
+                                            <h3>Software Test Management Solution</h3>
+                                            <br>
+                                            <p>TPMS는 소프트웨어의 품질관리를 위해 사전에 수동 또는 자동적으로 설계된 테스팅 프로세스를 통해 테스트를 관리하는 시스템입니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="item8">
+                        <div class="service-item">
+                            <div class="more">+</div>
+                            <img class="img-cover" src="https://www.yescnc.co.kr/img/itInfra/ems/img_it_infra_nms.png" alt="">
+                            <img class="img-fluid" src="img/adrian-infernus-GLf7bAwCdYg-unsplash.jpg" alt="" />
+                            <div class="service-caption">
+                                <div class="service-caption-heading">NMS</div>
+                                    <div id="myModal8" class="modal">
+                                        <div id="modal-content" class="modal-content">
+                                            <h2>Network Management System</h2>
+                                            <img src="https://www.yescnc.co.kr/img/itInfra/ems/img_it_infra_nms.png" alt="">
+                                            <h3>Network Management Solution</h3>
+                                            <p>NMS는 서버, 네트워크, DBMS, 부대설비와 같은 다양한 IT 인프라를 하나의 플랫폼에서 통합 관리하는 시스템입니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <!--SQA 제품 소개-->
+    <section class="sqa-section" id="sqa">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading">SQA</h2><br>
+                <h4 class="section-subheading">각종 제품의 기획에서부터 릴리즈(배포)까지 전 과정별로의 업무 효율화와 제품에 대한 품질 보증 및 관리</h4>
+                <p class="text-muted">제품 품질수준 확보를 위한 단계별 프로세스 정립 및 절차를 통한 품질향상에 기여 가능</p>
+            </div>
+            <!--모달 창 구현(완료)-->
+            <div class="row">
+                    <div id="item9">
+                        <div class="service-item">
+                            <div class="more">+</div>
+                            <img class="img-cover" src="https://www.yescnc.co.kr/img/index/img_index_02.png" alt="">
+                            <img class="img-fluid" src="img/luke-chesser-pJadQetzTkI-unsplash.jpg" alt="" />
+                            <div class="service-caption">
+                                <div class="service-caption-heading">Consulting</div>
+                                    <!--모달-->
+                                    <div id="myModal9" class="modal">
+                                    <!--모달 내용-->
+                                        <div id="modal-content" class="modal-content">
+                                            <h2>컨설팅 프로세스</h2>
+                                            <br><br>
+                                            <img src="https://www.yescnc.co.kr/img/quality/consulting_01.png" alt="">
+                                            <img src="img/process.PNG" alt="">
+                                            <br>
+                                            <h2>제공 화면</h2>
+                                            <img src="img/tpms.PNG" alt="">
+                                            <img src="img/dashboard.PNG" alt="">
+                                            <img src="img/tools.PNG" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div id="item10">
+                        <div class="service-item">
+                            <div class="more">+</div>
+                            <img class="img-cover" src="https://www.yescnc.co.kr/img/index/img_index_03.png" alt="">
+                            <img class="img-fluid" src="img/luke-chesser-pJadQetzTkI-unsplash.jpg" alt="" />
+                            <div class="service-caption">
+                                <div class="service-caption-heading">Automation</div>
+                                    <div id="myModal10" class="modal">
+                                        <div id="modal-content" class="modal-content">
+                                            <h2>자동화 구축 및 운용</h2>
+                                            <p>반복적이고 단순한 테스팅 작업을 자동화하여 고객사에 맞는 저비용, 고효율의 테스트 자동화 솔루션을 제공합니다.</p>
+                                            <img src="img/auto1.PNG" alt="">
+                                            <br><br>
+                                            <h2>자동화 Flow</h2>
+                                            <p>검증 System(TPMS/YDash)과 연동하여 테스트 케이스 할당부터 수행 및 결과 보고까지 자동화로 진행되어 검증효율성을 극대화합니다.</p>
+                                            <img src="img/auto.PNG" alt="">
+                                            <br><br>
+                                            <h2>자동화 도구</h2>
+                                            <img src="img/framework.PNG" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div id="item11">
+                        <div class="service-item">
+                            <div class="more">+</div>
+                            <img class="img-cover" src="https://www.yescnc.co.kr/img/index/img_index_01.png" alt="">
+                            <img class="img-fluid" src="img/luke-chesser-pJadQetzTkI-unsplash.jpg" alt="" />
+                            <div class="service-caption">
+                                <div class="service-caption-heading">Outsourcing</div>
+                                    <div id="myModal11" class="modal">
+                                        <div id="modal-content" class="modal-content">
+                                            <h2>아웃소싱</h2>
+                                            <p>제품에 대한 면밀한 분석을 통해 인적 자원을 효율적으로 분배, 활용하여 비용절감과 개발 전반에 걸쳐 품질 확보를 위한 전문 테스팅 인력을 지원합니다.</p>
+                                            <img src="img/outsourcing.PNG" alt="">
+                                            <br><br>
+                                            <img src="img/product.PNG" alt="">
+                                            <img src="img/employee.PNG" alt=""><br><br>
+                                            <img src="img/test.PNG" alt=""><br><br>
+                                            <img src="img/danger.PNG" alt="">
+                                            <img src="img/defect.PNG" alt=""><br><br>
+                                            <img src="img/kpi.PNG" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <!--footer: 회사 정보(완료)-->
+    <footer id="contact" class="footer text-center">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <section class="footer-contact">
+                <div class="tell">
+                    <article class="employment">
+                            <img src="https://www.yescnc.co.kr/img/contact/contact_01.png" alt="">
+                        <div class="info">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>tel</td>
+                                        <td>02-3471-1475</td>
+                                    </tr>
+                                    <tr>
+                                        <td>E-mail</td>
+                                        <td>yescnc@yescnc.co.kr</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </article>
+                </div>
+                <div class="tell">
+                    <article class="employment">
+                            <img src="https://www.yescnc.co.kr/img/contact/contact_03.png" alt="">
+                        <div class="info">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>tel</td>
+                                        <td>02-3471-1475</td>
+                                    </tr>
+                                    <tr>
+                                        <td>E-mail</td>
+                                        <td>yescnc@yescnc.co.kr</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </article>
+                </div>
+                <div class="tell">
+                    <article class="employment">
+                            <img src="https://www.yescnc.co.kr/img/contact/contact_04.png" alt="">
+                        <div class="info">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>tel</td>
+                                        <td>02-3471-1475</td>
+                                    </tr>
+                                    <tr>
+                                        <td>E-mail</td>
+                                        <td>yescnc@yescnc.co.kr</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <h3><a href="https://map.kakao.com/?from=roughmap&eName=%EC%98%88%EC%8A%A4%20%EC%94%A8%EC%95%A4%EC%94%A8&eX=511103&eY=1124420">Location</a></h3>
+        </div>
+    </footer>
+    <!--jquery plugin-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!--slick 슬라이드 배너 사용-->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--모달 창 사용-->
+    <script src="./jquery-3.0.0.min.js"></script>
+    <script src="./modal-dialog.js"></script>
+    <!--기본 js 파일-->
+    <script src="index.js"></script>
+</body>
+</html>
